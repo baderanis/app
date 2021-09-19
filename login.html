@@ -47,7 +47,7 @@ if(isset($_POST['login'])){
         $_SESSION['USER'] = $getUserName;
         $_SESSION['PASSWORD'] = $getPassword;
         $_SESSION['LOGIN'] = true;
-        echo "<script> location.replace('index.php') </script>";
+        echo "<script> location.replace('index.html') </script>";
         //echo "Login Proceed";
     }else{
         echo '<div class="alert alert-danger" role="alert" style="margin-top:20px;">

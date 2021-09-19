@@ -7,6 +7,7 @@
     <title>System</title>
 </head>
 <body>
+    hello
 <?php
 $username = "badersoft";
 $password = "12345";
@@ -18,10 +19,10 @@ if(isset($_SESSION['USER']) && isset($_SESSION['PASSWORD']) && isset($_SESSION['
         echo "<form method='POST'> <button type='submit' name='logout'>Logout</button></form>";
     }
 }else{
-    echo "<script> location.replace('login.php') </script>";
+    echo "<script> location.replace('login.html') </script>";
 }
 if(isset($_POST['logout'])){
-    echo "<script> location.replace('login.php') </script>";
+    echo "<script> location.replace('login.html') </script>";
     session_unset();
 }
 ?>
